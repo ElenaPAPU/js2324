@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const car={
+            marca:"Dacia",
+            model:"Logan",
+            an:2020,
+            culoare:"alb",
+            NrPasageri:5,
+            decapotabil:false,
+            km:65000
+        }
+        console.info('Masina este din anul', car.an)
+
+        const car2={
+            marca:"Dacia",
+            model:"Logan",
+            an:2020,
+            culoare:"alb",
+            NrPasageri:3,
+            decapotabil:false,
+            km:65000
+        }
+        console.log(typeof car);
+        console.log(car);
+        console.log(car == car2);
+        console.log(car.nrPasageri);
+        let x = 4;
+        let y = x;
+        y = 10;
+        car2.nrPasageri = 10;
+        console.log(car2.nrPasageri);
+        const car3 = car2;
+
+        car3.nrPasageri = 2;
+        console.log(car3.nrPasageri);
+        console.log(car2.nrPasageri);
+
+        //false, pentru ca sunt obiecte diferite
+        //stocate in zone de memorie diferite
+  
+  console.log(`Eu am o masina $ {car.marca} model $ {car.model}`)      
+       
+        </script>
+      
+</body>
+</html>
