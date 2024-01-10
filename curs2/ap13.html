@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    for(let x = 1;  x <= 3; x++){
+        document.write(' <div style="float:left; padding:50px"> ');  
+        for(let i = 1; i <= 20; i++) {
+            for(let j = 1; j <= 15; j++){
+                if(j == 1){
+                document.write(' <span style="color:red"> * </span>');
+             }
+
+             else{
+             document.write('*');
+             }
+
+            }
+         
+          document.write(' <br> '); 
+          
+        }
+                  
+        document.write(' </div> ');  
+    }
+    
+    </script>
+</body>
+</html>
