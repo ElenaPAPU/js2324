@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //metoda 1 clasica functie ce nu returneaza nimic
+        function sumaNr(a,b){
+            console.log(a+b);
+        }
+        sumaNr(2,3);
+    
+        // metoda 2 clasica functia returneaza o valoare - recomandata
+        function suma2(a,b){
+            return a+b;
+        }
+        let mySuma = suma2(2,3);
+        console.log(mySuma);
+
+        // metoda 3 functie anonima 
+        let suma = function (a,b){ return a + b};
+        console.log(suma(2,3));
+
+
+        // metoda 4 functie anonima de tip arrow - nu se recomanda
+        var anon = (a,b) => a + b; //daca am o singura instructiune
+        console.log(anon(2,3));
+
+        //sau
+        // metoda 5 functie anonima de tip arrow
+        var anon1 = (a,b) => { return a + b};
+        console.log(anon1(2,3));
+        
+    </script>
+</body>
+</html>
