@@ -23,7 +23,7 @@ const element = event.target;
 element.classList.toogle("done");
 });
 
-pas 3 afisam produsele din local Storage
+// pas 3 afisam produsele din local Storage
 window.onload = function() {
     var nr =(localStorage.getItem('numarProduse'));
     let i;
@@ -41,7 +41,7 @@ else{
 }
 }
 // pas 4 stergem produsele din local storage
-document.getElementById("list").addEventListener(dblclick'(function(event){
+document.getElementById("list").addEventListener('dblclick', function(event){
 
 });
     
